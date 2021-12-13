@@ -1,2 +1,2 @@
 # FrontEnd-Mentor
-- challenges from th epopular website https://www.frontendmentor.io/home
+- challenges from the popular website https://www.frontendmentor.io/home
