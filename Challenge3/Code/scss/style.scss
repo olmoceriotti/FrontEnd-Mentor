@@ -1,0 +1,83 @@
+@use 'config';
+@import 'utilities';
+.box{
+    width: 65%;
+    height: 50%;
+    //border: solid 2px white;
+    display: flex;
+    justify-content: space-between;
+    background-color: $cardBg;
+}
+
+%side{
+    width: 50%;
+}
+
+.leftSide{
+    @extend %side;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 5%;
+    h1{
+        @include heading-font(700);
+        font-size: 2.3rem;
+        color: $mainWhite;
+        margin: 1rem 0 2rem;
+        span{
+            color: $accColor;
+        }
+    }
+
+    p{
+        @include body-font;
+        max-width: 80%;
+        line-height: 1.5rem;
+        color: $secondWhite;
+    }
+
+    .stats{
+
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        @include heading-font(400);
+        .element{
+            .number{
+                color: $mainWhite;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .subtitle{
+                color: $thirdWhite;
+            }
+        }
+    }
+}
+
+.rightSide{
+    @extend %side;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 600px;
+        min-height: 100%;
+        filter: contrast(130%);
+        z-index: 0;
+    }
+
+    div{
+        background-color: $accColor;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 60%;
+        z-index: 1;
+    }
+}
+
+@import 'mobile';
+

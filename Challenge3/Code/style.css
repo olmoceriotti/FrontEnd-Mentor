@@ -1,0 +1,52 @@
+.container{
+    /*background-color: hsl(233, 47%, 7%);*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 70%;
+    height: 56%;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSide{
+ width: 50%;;
+}
+.rightSide{
+    width: 50%;
+    overflow: hidden;
+}
+
+.rightSide img{
+    width: 100%;
+}
+/*
+.title{
+
+}
+
+.paragraph{
+
+}
+
+.stats{
+
+}
+
+.element{
+
+}
+
+.subtitle{
+
+}
+
+
+
+*/
